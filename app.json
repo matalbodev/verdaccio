@@ -1,7 +1,6 @@
 {
-  "name": "verdaccio-heroku",
-  "description": "A private npm registry with Heroku",
-  "repository": "https://github.com/juanpicado/verdaccio-heroku-example",
+  "name": "verdaccio-coolify",
+  "description": "A private npm registry with Coolify",
   "keywords": ["verdaccio", "docker", "npm"],
   "stack": "container"
 }
