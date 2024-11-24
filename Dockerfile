@@ -1,10 +1,12 @@
-FROM verdaccio/verdaccio:5
+FROM node:lts-alpine as builder
 
 USER root
 
 ENV NODE_ENV=production
 
-RUN yarn && yarn add verdaccio-memory
+RUN npm install verdaccio-memory
+
+FROM verdaccio/verdaccio:5
 
 COPY ./config.yaml /verdaccio/conf
 
